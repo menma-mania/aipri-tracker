@@ -14,15 +14,16 @@ body {
   width: 160px;
   aspect-ratio: 1 / 1;
   margin: 10px;
-  border: 2px solid #000;
+  border: 2px solid transparent;
   border-radius: 10px;
   background: white;
   position: relative;
   overflow: hidden;
 }
 .song-card.rainbow {
-  border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+  border-width: 4px;
   border-style: solid;
+  border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
 }
 .song-jacket {
   width: 100%;
@@ -49,14 +50,10 @@ body {
 .progress-icon {
   width: 100%;
   height: auto;
-  border: 1px solid #000;
+  border: 1px solid black;
   box-sizing: border-box;
-  background-color: transparent;
   object-fit: contain;
-}
-/* empty.jpeg のときは非表示 */
-.progress-icon[src*="empty.png"] {
-  visibility: hidden;
+  background-color: transparent;
 }
 .song-info {
   position: absolute;
