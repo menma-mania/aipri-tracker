@@ -13,13 +13,13 @@ body {
 .song-card {
   width: 160px;
   margin: 10px;
-  border: 4px solid #ccc;
+  border: 4px solid transparent;
   border-radius: 10px;
   background: white;
   cursor: pointer;
 }
 .song-card.silver {
-  border-color: silver;
+  border-color: red; /* 赤枠に変更 */
 }
 .song-card.gold {
   border-color: gold;
