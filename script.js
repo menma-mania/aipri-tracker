@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("data.json")
     .then((response) => response.json())
     .then((songs) => {
+      const saved = JSON.parse(localStorage.getItem("aipriProgress")) || {};
       const songList = document.getElementById("song-list");
 
       songs.forEach((song, index) => {
@@ -19,15 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const progressTypes = ["full1", "perfect1", "full2", "perfect2", "fulloni", "perfectoni"];
         const progressImages = {
-          full1: "full1.png",
-          perfect1: "perfect1.png",
-          full2: "full2.png",
-          perfect2: "perfect2.png",
-          fulloni: "fulloni.png",
-          perfectoni: "perfectoni.png"
+          full1: "full1.jpeg",
+          perfect1: "perfect1.jpeg",
+          full2: "full2.jpeg",
+          perfect2: "perfect2.jpeg",
+          fulloni: "fulloni.jpeg",
+          perfectoni: "perfectoni.jpeg"
         };
 
-        const states = song.states || {};
+        song.states = saved[index]?.states || {};
         const icons = [];
 
         progressTypes.forEach((type) => {
@@ -35,25 +36,25 @@ document.addEventListener("DOMContentLoaded", function () {
           img.className = "progress-icon";
           img.dataset.type = type;
 
-          // おにむず未実装の場合、該当画像は無効（非表示）
-          if (!song.hasOni && (type === "fulloni" || type === "perfectoni")) {
+          const isOniType = (type === "fulloni" || type === "perfectoni");
+          const hasOni = song.hasOni;
+
+          if (isOniType && !hasOni) {
             img.style.visibility = "hidden";
             img.src = "images/empty.png";
           } else {
-            const hasProgress = states[type];
-            img.src = hasProgress ? `images/${progressImages[type]}` : "images/empty.png";
+            const active = song.states[type];
+            img.src = active ? `images/${progressImages[type]}` : "images/empty.png";
+
             img.addEventListener("click", (e) => {
               e.stopPropagation();
-              const currentState = img.src.includes(progressImages[type]);
-              states[type] = !currentState;
-              img.src = states[type] ? `images/${progressImages[type]}` : "images/empty.png";
-              updateRainbow(card, states, song.hasOni);
-              song.states = states;
-              localStorage.setItem("aipriProgress", JSON.stringify(songs));
+              song.states[type] = !song.states[type];
+              img.src = song.states[type] ? `images/${progressImages[type]}` : "images/empty.png";
+              updateRainbow();
+              saveProgress();
             });
           }
 
-          icons.push(img);
           progressBox.appendChild(img);
         });
 
@@ -64,35 +65,22 @@ document.addEventListener("DOMContentLoaded", function () {
         card.appendChild(jacket);
         card.appendChild(progressBox);
         card.appendChild(info);
-
-        if (shouldBeRainbow(states, song.hasOni)) {
-          card.classList.add("rainbow");
-        }
-
         songList.appendChild(card);
-      });
 
-      function shouldBeRainbow(states, hasOni) {
-        const required = hasOni
-          ? ["full1", "perfect1", "full2", "perfect2", "fulloni", "perfectoni"]
-          : ["full1", "perfect1", "full2", "perfect2"];
-        return required.every((type) => states[type]);
-      }
-
-      function updateRainbow(card, states, hasOni) {
-        if (shouldBeRainbow(states, hasOni)) {
-          card.classList.add("rainbow");
-        } else {
-          card.classList.remove("rainbow");
+        function updateRainbow() {
+          const typesToCheck = song.hasOni
+            ? progressTypes
+            : progressTypes.slice(0, 4);
+          const allChecked = typesToCheck.every((t) => song.states[t]);
+          card.classList.toggle("rainbow", allChecked);
         }
-      }
 
-      // ローカルストレージから進捗復元
-      const saved = JSON.parse(localStorage.getItem("aipriProgress"));
-      if (saved) {
-        saved.forEach((savedSong, i) => {
-          if (songs[i]) songs[i].states = savedSong.states || {};
-        });
-      }
+        function saveProgress() {
+          saved[index] = { states: song.states };
+          localStorage.setItem("aipriProgress", JSON.stringify(saved));
+        }
+
+        updateRainbow();
+      });
     });
 });
