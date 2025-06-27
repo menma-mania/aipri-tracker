@@ -29,29 +29,25 @@ fetch('data.json')
       if (isAllCleared(progress, hasOni)) wrapper.classList.add('rainbow');
 
       wrapper.innerHTML = `
-        <div class="song-jacket" style="background-image: url('${song.jacket}')">
-          <div class="progress-box">
-            ${progressKeys.map(key => {
-              if (!hasOni && (key === 'fulloni' || key === 'perfectoni')) return '';
-              const src = progress[key] ? `images/${key}.png` : 'images/empty.png';
-              return `<img class="progress-icon" data-key="${key}" src="${src}" />`;
-            }).join('')}
-          </div>
+        <div class="song-jacket" style="background-image: url('${song.jacket}')"></div>
+        <div class="progress-box">
+          ${progressKeys.map(key => {
+            if (!hasOni && (key === 'fulloni' || key === 'perfectoni')) return '';
+            const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.jpeg';
+            return `<img class="progress-icon" data-key="${key}" src="${src}" />`;
+          }).join('')}
         </div>
         <div class="song-info"><strong>${song.shortTitle}</strong></div>
       `;
 
-      // クリックで進捗をトグル
       wrapper.querySelectorAll('.progress-icon').forEach(img => {
         img.addEventListener('click', (e) => {
           e.stopPropagation();
           const key = img.dataset.key;
           progress[key] = !progress[key];
-          const src = progress[key] ? `images/${key}.png` : 'images/empty.png';
+          const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.jpeg';
           img.src = src;
           saveProgress(song.title, progress);
-
-          // 枠の再判定
           if (isAllCleared(progress, hasOni)) {
             wrapper.classList.add('rainbow');
           } else {
