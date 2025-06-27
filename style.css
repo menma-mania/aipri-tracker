@@ -51,7 +51,7 @@ body {
   height: auto;
   border: 1px solid #000;
   box-sizing: border-box;
-  background: white;
+  background-color: transparent; /* 透明に */
 }
 .song-info {
   position: absolute;
