@@ -16,6 +16,10 @@ body {
   border: 4px solid #ccc;
   border-radius: 10px;
   background: white;
+  cursor: pointer;
+}
+.song-card.silver {
+  border-color: silver;
 }
 .song-card.gold {
   border-color: gold;
