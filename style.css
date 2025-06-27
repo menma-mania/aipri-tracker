@@ -51,7 +51,12 @@ body {
   height: auto;
   border: 1px solid #000;
   box-sizing: border-box;
-  background-color: transparent; /* 透明に */
+  background-color: transparent;
+  object-fit: contain;
+}
+/* empty.jpeg のときは非表示 */
+.progress-icon[src*="empty.jpeg"] {
+  visibility: hidden;
 }
 .song-info {
   position: absolute;
