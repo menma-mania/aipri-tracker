@@ -55,7 +55,7 @@ body {
   object-fit: contain;
 }
 /* empty.jpeg のときは非表示 */
-.progress-icon[src*="empty.jpeg"] {
+.progress-icon[src*="empty.png"] {
   visibility: hidden;
 }
 .song-info {
