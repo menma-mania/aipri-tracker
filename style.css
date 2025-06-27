@@ -1,0 +1,35 @@
+
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+#song-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.song-card {
+  width: 160px;
+  margin: 10px;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  background: white;
+}
+.song-card.gold {
+  border-color: gold;
+}
+.song-card.rainbow {
+  border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+  border-style: solid;
+}
+.song-jacket {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+}
+.song-info {
+  padding: 5px;
+}

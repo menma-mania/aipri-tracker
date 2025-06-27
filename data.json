@@ -1,0 +1,29 @@
+[
+  {
+    "title": "ハッピー★パレード",
+    "jacket": "images/song1.jpg",
+    "result": {
+      "1まい": "FC",
+      "2まい": "PFC",
+      "おにむず": "PFC"
+    }
+  },
+  {
+    "title": "トキメキ☆スピカ",
+    "jacket": "images/song2.jpg",
+    "result": {
+      "1まい": "FC",
+      "2まい": null,
+      "おにむず": "FC"
+    }
+  },
+  {
+    "title": "ナイショのヒミツ",
+    "jacket": "images/song3.jpg",
+    "result": {
+      "1まい": null,
+      "2まい": null,
+      "おにむず": null
+    }
+  }
+]
