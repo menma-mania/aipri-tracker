@@ -1,61 +1,98 @@
 
-const progressKeys = [
-  'full1', 'perfect1', 'full2', 'perfect2', 'fulloni', 'perfectoni'
-];
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((songs) => {
+      const songList = document.getElementById("song-list");
 
-function loadProgress(title) {
-  const data = localStorage.getItem(`progress-${title}`);
-  return data ? JSON.parse(data) : {};
-}
+      songs.forEach((song, index) => {
+        const card = document.createElement("div");
+        card.className = "song-card";
+        card.dataset.index = index;
 
-function saveProgress(title, progress) {
-  localStorage.setItem(`progress-${title}`, JSON.stringify(progress));
-}
+        const jacket = document.createElement("div");
+        jacket.className = "song-jacket";
+        jacket.style.backgroundImage = `url(images/${song.image})`;
 
-function isAllCleared(progress, hasOni) {
-  const keys = hasOni ? progressKeys : progressKeys.slice(0, 4);
-  return keys.every(k => progress[k]);
-}
+        const progressBox = document.createElement("div");
+        progressBox.className = "progress-box";
 
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    const list = document.getElementById('song-list');
-    data.forEach(song => {
-      const progress = loadProgress(song.title);
-      const hasOni = !!song.hasOni;
-      const wrapper = document.createElement('div');
-      wrapper.className = 'song-card';
-      if (isAllCleared(progress, hasOni)) wrapper.classList.add('rainbow');
+        const progressTypes = ["full1", "perfect1", "full2", "perfect2", "fulloni", "perfectoni"];
+        const progressImages = {
+          full1: "full1.png",
+          perfect1: "perfect1.png",
+          full2: "full2.png",
+          perfect2: "perfect2.png",
+          fulloni: "fulloni.png",
+          perfectoni: "perfectoni.png"
+        };
 
-      wrapper.innerHTML = `
-        <div class="song-jacket" style="background-image: url('${song.jacket}')"></div>
-        <div class="progress-box">
-          ${progressKeys.map(key => {
-            if (!hasOni && (key === 'fulloni' || key === 'perfectoni')) return '';
-            const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.png';
-            return `<img class="progress-icon" data-key="${key}" src="${src}" />`;
-          }).join('')}
-        </div>
-        <div class="song-info"><strong>${song.shortTitle}</strong></div>
-      `;
+        const states = song.states || {};
+        const icons = [];
 
-      wrapper.querySelectorAll('.progress-icon').forEach(img => {
-        img.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const key = img.dataset.key;
-          progress[key] = !progress[key];
-          const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.png';
-          img.src = src;
-          saveProgress(song.title, progress);
-          if (isAllCleared(progress, hasOni)) {
-            wrapper.classList.add('rainbow');
+        progressTypes.forEach((type) => {
+          const img = document.createElement("img");
+          img.className = "progress-icon";
+          img.dataset.type = type;
+
+          // おにむず未実装の場合、該当画像は無効（非表示）
+          if (!song.hasOni && (type === "fulloni" || type === "perfectoni")) {
+            img.style.visibility = "hidden";
+            img.src = "images/empty.png";
           } else {
-            wrapper.classList.remove('rainbow');
+            const hasProgress = states[type];
+            img.src = hasProgress ? `images/${progressImages[type]}` : "images/empty.png";
+            img.addEventListener("click", (e) => {
+              e.stopPropagation();
+              const currentState = img.src.includes(progressImages[type]);
+              states[type] = !currentState;
+              img.src = states[type] ? `images/${progressImages[type]}` : "images/empty.png";
+              updateRainbow(card, states, song.hasOni);
+              song.states = states;
+              localStorage.setItem("aipriProgress", JSON.stringify(songs));
+            });
           }
+
+          icons.push(img);
+          progressBox.appendChild(img);
         });
+
+        const info = document.createElement("div");
+        info.className = "song-info";
+        info.innerText = song.shortTitle;
+
+        card.appendChild(jacket);
+        card.appendChild(progressBox);
+        card.appendChild(info);
+
+        if (shouldBeRainbow(states, song.hasOni)) {
+          card.classList.add("rainbow");
+        }
+
+        songList.appendChild(card);
       });
 
-      list.appendChild(wrapper);
+      function shouldBeRainbow(states, hasOni) {
+        const required = hasOni
+          ? ["full1", "perfect1", "full2", "perfect2", "fulloni", "perfectoni"]
+          : ["full1", "perfect1", "full2", "perfect2"];
+        return required.every((type) => states[type]);
+      }
+
+      function updateRainbow(card, states, hasOni) {
+        if (shouldBeRainbow(states, hasOni)) {
+          card.classList.add("rainbow");
+        } else {
+          card.classList.remove("rainbow");
+        }
+      }
+
+      // ローカルストレージから進捗復元
+      const saved = JSON.parse(localStorage.getItem("aipriProgress"));
+      if (saved) {
+        saved.forEach((savedSong, i) => {
+          if (songs[i]) songs[i].states = savedSong.states || {};
+        });
+      }
     });
-  });
+});
