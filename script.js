@@ -1,18 +1,20 @@
 
-const states_all = ['none', 'silver', 'gold', 'rainbow'];
-const states_no_oni = ['none', 'silver', 'gold'];
+const progressKeys = [
+  'full1', 'perfect1', 'full2', 'perfect2', 'fulloni', 'perfectoni'
+];
 
-function getNextState(current, allowedStates) {
-  const index = allowedStates.indexOf(current);
-  return allowedStates[(index + 1) % allowedStates.length];
+function loadProgress(title) {
+  const data = localStorage.getItem(`progress-${title}`);
+  return data ? JSON.parse(data) : {};
 }
 
-function loadState(title) {
-  return localStorage.getItem(`frame-${title}`) || 'none';
+function saveProgress(title, progress) {
+  localStorage.setItem(`progress-${title}`, JSON.stringify(progress));
 }
 
-function saveState(title, state) {
-  localStorage.setItem(`frame-${title}`, state);
+function isAllCleared(progress, hasOni) {
+  const keys = hasOni ? progressKeys : progressKeys.slice(0, 4);
+  return keys.every(k => progress[k]);
 }
 
 fetch('data.json')
@@ -20,38 +22,44 @@ fetch('data.json')
   .then(data => {
     const list = document.getElementById('song-list');
     data.forEach(song => {
-      const supportsRainbow = !!song.hasOni;  // true if hasOni: true
-      const allowedStates = supportsRainbow ? states_all : states_no_oni;
+      const progress = loadProgress(song.title);
+      const hasOni = !!song.hasOni;
+      const wrapper = document.createElement('div');
+      wrapper.className = 'song-card';
+      if (isAllCleared(progress, hasOni)) wrapper.classList.add('rainbow');
 
-      let state = loadState(song.title);
-      if (!allowedStates.includes(state)) {
-        state = 'none'; // 無効な状態だった場合リセット
-        saveState(song.title, state);
-      }
-
-      const card = document.createElement('div');
-      card.className = 'song-card';
-      if (state !== 'none') card.classList.add(state);
-      card.dataset.title = song.title;
-      card.dataset.state = state;
-      card.dataset.hasOni = supportsRainbow;
-
-      card.innerHTML = `
-        <div class="song-jacket" style="background-image: url('${song.jacket}')"></div>
+      wrapper.innerHTML = `
+        <div class="song-jacket" style="background-image: url('${song.jacket}')">
+          <div class="progress-box">
+            ${progressKeys.map(key => {
+              if (!hasOni && (key === 'fulloni' || key === 'perfectoni')) return '';
+              const src = progress[key] ? `images/${key}.png` : 'images/empty.png';
+              return `<img class="progress-icon" data-key="${key}" src="${src}" />`;
+            }).join('')}
+          </div>
+        </div>
         <div class="song-info"><strong>${song.shortTitle}</strong></div>
       `;
 
-      card.addEventListener('click', () => {
-        const current = card.dataset.state;
-        const hasOni = card.dataset.hasOni === 'true';
-        const allowed = hasOni ? states_all : states_no_oni;
-        const next = getNextState(current, allowed);
-        if (current !== 'none') card.classList.remove(current);
-        if (next !== 'none') card.classList.add(next);
-        card.dataset.state = next;
-        saveState(song.title, next);
+      // クリックで進捗をトグル
+      wrapper.querySelectorAll('.progress-icon').forEach(img => {
+        img.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const key = img.dataset.key;
+          progress[key] = !progress[key];
+          const src = progress[key] ? `images/${key}.png` : 'images/empty.png';
+          img.src = src;
+          saveProgress(song.title, progress);
+
+          // 枠の再判定
+          if (isAllCleared(progress, hasOni)) {
+            wrapper.classList.add('rainbow');
+          } else {
+            wrapper.classList.remove('rainbow');
+          }
+        });
       });
 
-      list.appendChild(card);
+      list.appendChild(wrapper);
     });
   });
