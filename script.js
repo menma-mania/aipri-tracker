@@ -33,7 +33,7 @@ fetch('data.json')
         <div class="progress-box">
           ${progressKeys.map(key => {
             if (!hasOni && (key === 'fulloni' || key === 'perfectoni')) return '';
-            const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.jpeg';
+            const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.png';
             return `<img class="progress-icon" data-key="${key}" src="${src}" />`;
           }).join('')}
         </div>
@@ -45,7 +45,7 @@ fetch('data.json')
           e.stopPropagation();
           const key = img.dataset.key;
           progress[key] = !progress[key];
-          const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.jpeg';
+          const src = progress[key] ? `images/${key}.jpeg` : 'images/empty.png';
           img.src = src;
           saveProgress(song.title, progress);
           if (isAllCleared(progress, hasOni)) {
