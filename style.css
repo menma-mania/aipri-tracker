@@ -12,14 +12,17 @@ body {
 }
 .song-card {
   width: 160px;
+  aspect-ratio: 1 / 1;
   margin: 10px;
   border: 4px solid transparent;
   border-radius: 10px;
   background: white;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 .song-card.silver {
-  border-color: red; /* 赤枠に変更 */
+  border-color: red;
 }
 .song-card.gold {
   border-color: gold;
@@ -30,10 +33,16 @@ body {
 }
 .song-jacket {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   background-size: cover;
   background-position: center;
 }
 .song-info {
-  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  padding: 4px;
+  box-sizing: border-box;
 }

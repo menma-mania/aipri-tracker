@@ -2,246 +2,295 @@
   {
     "title": "ぜんりょくじょしかくめい！",
     "jacket": "images/ぜんりょくじょしかくめい！.png",
-    "shortTitle": "ぜんりょくじょしか…"
+    "shortTitle": "ぜんりょくじょしか…",
+    "hasOni": false
   },
   {
     "title": "いっちょくせんだいさくせん！",
     "jacket": "images/いっちょくせんだいさくせん！.png",
-    "shortTitle": "いっちょくせんだい…"
+    "shortTitle": "いっちょくせんだい…",
+    "hasOni": true
   },
   {
     "title": "Ring Ring Ring feat.ひまり",
     "jacket": "images/RingRingRing.png",
-    "shortTitle": "Ring Ring…"
+    "shortTitle": "Ring Ring…",
+    "hasOni": false
   },
   {
     "title": "ひみつのふふふ",
     "jacket": "images/ひみつのふふふ.png",
-    "shortTitle": "ひみつのふふふ"
+    "shortTitle": "ひみつのふふふ",
+    "hasOni": false
   },
   {
     "title": "レッツ！アイプリ",
     "jacket": "images/レッツ！アイプリ.png",
-    "shortTitle": "レッツ！アイプリ"
+    "shortTitle": "レッツ！アイプリ",
+    "hasOni": false
   },
   {
     "title": "P.O.P.P.Y.",
     "jacket": "images/POPPY.png",
-    "shortTitle": "P.O.P.P.Y…"
+    "shortTitle": "P.O.P.P.Y…",
+    "hasOni": false
   },
   {
     "title": "シークレット・ドリーム",
     "jacket": "images/シークレット・ドリーム.png",
-    "shortTitle": "シークレット・ドリ…"
+    "shortTitle": "シークレット・ドリ…",
+    "hasOni": false
   },
   {
     "title": "ヒカリノコトバ",
     "jacket": "images/ヒカリノコトバ.png",
-    "shortTitle": "ヒカリノコトバ"
+    "shortTitle": "ヒカリノコトバ",
+    "hasOni": false
   },
   {
     "title": "GIRA GIRA STAR",
     "jacket": "images/GIRAGIRASTAR.png",
-    "shortTitle": "GIRA GIRA…"
+    "shortTitle": "GIRA GIRA…",
+    "hasOni": true
   },
   {
     "title": "きらめきのうた",
     "jacket": "images/きらめきのうた.png",
-    "shortTitle": "きらめきのうた"
+    "shortTitle": "きらめきのうた",
+    "hasOni": false
   },
   {
     "title": "GIRA GIRA STAR（ダークチィver.）",
     "jacket": "images/GIRAGIRASTAR（ダークチィver）.png",
-    "shortTitle": "GIRA GIRA…"
+    "shortTitle": "GIRA GIRA…",
+    "hasOni": false
   },
   {
     "title": "きらめきのうた（シークレットフレンズver.）",
     "jacket": "images/きらめきのうた（シークレットフレンズver）.png",
-    "shortTitle": "きらめきのうた（シー…"
+    "shortTitle": "きらめきのうた（シー…",
+    "hasOni": false
   },
   {
     "title": "パステルステップデイズ",
     "jacket": "images/パステルステップデイズ.png",
-    "shortTitle": "パステルステップデ…"
+    "shortTitle": "パステルステップデ…",
+    "hasOni": true
   },
   {
     "title": "ムテキDUOエナジー",
     "jacket": "images/ムテキDUOエナジー.png",
-    "shortTitle": "ムテキDUOエナジ…"
+    "shortTitle": "ムテキDUOエナジ…",
+    "hasOni": true
   },
   {
     "title": "Stand Get Up",
     "jacket": "images/StandGetUp.png",
-    "shortTitle": "Stand Get…"
+    "shortTitle": "Stand Get…",
+    "hasOni": true
   },
   {
     "title": "ネバギバラバー",
     "jacket": "images/ネバギバラバー.png",
-    "shortTitle": "ネバギバラバー"
+    "shortTitle": "ネバギバラバー",
+    "hasOni": true
   },
   {
     "title": "We’re The World",
     "jacket": "images/We’reTheWorld.png",
-    "shortTitle": "We’re The…"
+    "shortTitle": "We’re The…",
+    "hasOni": true
   },
   {
     "title": "Perfect☆STARs",
     "jacket": "images/Perfect☆STARs.png",
-    "shortTitle": "Perfect☆S…"
+    "shortTitle": "Perfect☆S…",
+    "hasOni": true
   },
   {
     "title": "クリスマス・カルテット",
     "jacket": "images/クリスマス・カルテット.png",
-    "shortTitle": "クリスマス・カルテ…"
+    "shortTitle": "クリスマス・カルテ…",
+    "hasOni": false
   },
   {
     "title": "ニュースタージョーカー",
     "jacket": "images/ニュースタージョーカー.png",
-    "shortTitle": "ニュースタージョーカ…"
+    "shortTitle": "ニュースタージョーカ…",
+    "hasOni": false
   },
   {
     "title": "キズナ×リンク",
     "jacket": "images/キズナ×リンク.png",
-    "shortTitle": "キズナ×リンク"
+    "shortTitle": "キズナ×リンク",
+    "hasOni": false
   },
   {
     "title": "ときめきグラビティ",
     "jacket": "images/ときめきグラビティ.png",
-    "shortTitle": "ときめきグラビティ"
+    "shortTitle": "ときめきグラビティ",
+    "hasOni": false
   },
   {
     "title": "わたしの大切にしてたこと",
     "jacket": "images/わたしの大切にしてたこと.png",
-    "shortTitle": "わたしの大切にして…"
+    "shortTitle": "わたしの大切にして…",
+    "hasOni": true
   },
   {
     "title": "超Easy Drive☆",
     "jacket": "images/超EasyDrive☆.png",
-    "shortTitle": "超Easy Dri…"
+    "shortTitle": "超Easy Dri…",
+    "hasOni": true
   },
   {
     "title": "ココロ・アストロノーツ",
     "jacket": "images/ココロ・アストロノーツ.png",
-    "shortTitle": "ココロ・アストロノ…"
+    "shortTitle": "ココロ・アストロノ…",
+    "hasOni": false
   },
   {
     "title": "Piece Of Dream",
     "jacket": "images/PieceOfDream.png",
-    "shortTitle": "Piece Of …"
+    "shortTitle": "Piece Of …",
+    "hasOni": false
   },
   {
     "title": "ぴかぴかマイストーリー",
     "jacket": "images/ぴかぴかマイストーリー.png",
-    "shortTitle": "ぴかぴかマイストー…"
+    "shortTitle": "ぴかぴかマイストー…",
+    "hasOni": false
   },
   {
     "title": "ひまりのひみつマイソング♪",
     "jacket": "images/ひまりのひみつマイソング♪.png",
-    "shortTitle": "ひまりのひみつマイ…"
+    "shortTitle": "ひまりのひみつマイ…",
+    "hasOni": false
   },
   {
     "title": "みつむぎのひみつマイソング♪",
     "jacket": "images/みつむぎのひみつマイソング♪.png",
-    "shortTitle": "みつむぎのひみつマイ…"
+    "shortTitle": "みつむぎのひみつマイ…",
+    "hasOni": false
   },
   {
     "title": "サクラのひみつマイソング♪",
     "jacket": "images/サクラのひみつマイソング♪.png",
-    "shortTitle": "サクラのひみつマイ…"
+    "shortTitle": "サクラのひみつマイ…",
+    "hasOni": false
   },
   {
     "title": "タマキのひみつマイソング♪",
     "jacket": "images/タマキのひみつマイソング♪.png",
-    "shortTitle": "タマキのひみつマイ…"
+    "shortTitle": "タマキのひみつマイ…",
+    "hasOni": false
   },
   {
     "title": "アイリのひみつマイソング♪",
     "jacket": "images/アイリのひみつマイソング♪.png",
-    "shortTitle": "アイリのひみつマイ…"
+    "shortTitle": "アイリのひみつマイ…",
+    "hasOni": false
   },
   {
     "title": "リンリンのひみつマイソング♪",
     "jacket": "images/リンリンのひみつマイソング♪.png",
-    "shortTitle": "リンリンのひみつマ…"
+    "shortTitle": "リンリンのひみつマ…",
+    "hasOni": false
   },
   {
     "title": "チィのひみつマイソング♪",
     "jacket": "images/チィのひみつマイソング♪.png",
-    "shortTitle": "チィのひみつマイソ…"
+    "shortTitle": "チィのひみつマイソ…",
+    "hasOni": false
   },
   {
     "title": "つむぎのひみつマイソング♪",
     "jacket": "images/つむぎのひみつマイソング♪.png",
-    "shortTitle": "つむぎのひみつマイ…"
+    "shortTitle": "つむぎのひみつマイ…",
+    "hasOni": false
   },
   {
     "title": "ハピハピハッピー☆マイバースデー",
     "jacket": "images/ハピハピハッピー☆マイバースデー.png",
-    "shortTitle": "ハピハピハッピー☆…"
+    "shortTitle": "ハピハピハッピー☆…",
+    "hasOni": false
   },
   {
     "title": "Go！アイプリバース",
     "jacket": "images/Go！アイプリバース.png",
-    "shortTitle": "Go！アイプリバー…"
+    "shortTitle": "Go！アイプリバー…",
+    "hasOni": false
   },
   {
     "title": "Let’s dance!×2",
     "jacket": "images/Let’sdance!×2.png",
-    "shortTitle": "Let’s dan…"
+    "shortTitle": "Let’s dan…",
+    "hasOni": false
   },
   {
     "title": "aipri life♡",
     "jacket": "images/aiprilife.png",
-    "shortTitle": "aipri lif…"
+    "shortTitle": "aipri lif…",
+    "hasOni": false
   },
   {
     "title": "スマイル×11",
     "jacket": "images/スマイル×11.png",
-    "shortTitle": "スマイル×11"
+    "shortTitle": "スマイル×11",
+    "hasOni": false
   },
   {
     "title": "マイキャラ最新ヘアカタログ",
     "jacket": "images/マイキャラ最新ヘアカタログ.png",
-    "shortTitle": "マイキャラ最新ヘア…"
+    "shortTitle": "マイキャラ最新ヘア…",
+    "hasOni": false
   },
   {
     "title": "Enjoy！アイプリバース",
     "jacket": "images/Enjoy！アイプリバース.png",
-    "shortTitle": "Enjoy！アイプ…"
+    "shortTitle": "Enjoy！アイプ…",
+    "hasOni": false
   },
   {
     "title": "KIRA RAコーデパラダイス",
     "jacket": "images/KIRARAコーデパラダイス.png",
-    "shortTitle": "KIRA RAコー…"
+    "shortTitle": "KIRA RAコー…",
+    "hasOni": false
   },
   {
     "title": "プリンセス・オンステージ",
     "jacket": "images/プリンセス・オンステージ.png",
-    "shortTitle": "プリンセス・オンス…"
+    "shortTitle": "プリンセス・オンス…",
+    "hasOni": false
   },
   {
     "title": "エブリデイ☆アイプリTime",
     "jacket": "images/エブリデイ☆アイプリTime.png",
-    "shortTitle": "エブリデイ☆アイプ…"
+    "shortTitle": "エブリデイ☆アイプ…",
+    "hasOni": false
   },
   {
     "title": "アイプリバースメドレー1",
     "jacket": "images/アイプリバースメドレー1.png",
-    "shortTitle": "バースメドレー1"
+    "shortTitle": "バースメドレー1",
+    "hasOni": false
   },
   {
     "title": "アイプリバースメドレー2",
     "jacket": "images/アイプリバースメドレー2.png",
-    "shortTitle": "バースメドレー2"
+    "shortTitle": "バースメドレー2",
+    "hasOni": false
   },
   {
     "title": "アイプリバースメドレー3",
     "jacket": "images/アイプリバースメドレー3.png",
-    "shortTitle": "バースメドレー3"
+    "shortTitle": "バースメドレー3",
+    "hasOni": false
   },
   {
     "title": "オシャレまじょ♥ラブandベリーメドレー",
     "jacket": "images/オシャレまじょ♥ラブandベリーメドレー.png",
-    "shortTitle": "オシャレまじょ♥ラ…"
+    "shortTitle": "オシャレまじょ♥ラ…",
+    "hasOni": false
   }
 ]
