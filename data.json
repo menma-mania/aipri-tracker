@@ -1,29 +1,247 @@
 [
   {
-    "title": "ハッピー★パレード",
-    "jacket": "images/song1.jpg",
-    "result": {
-      "1まい": "FC",
-      "2まい": "PFC",
-      "おにむず": "PFC"
-    }
+    "title": "ぜんりょくじょしかくめい！",
+    "jacket": "images/ぜんりょくじょしかくめい！.png",
+    "shortTitle": "ぜんりょくじょしか…"
   },
   {
-    "title": "トキメキ☆スピカ",
-    "jacket": "images/song2.jpg",
-    "result": {
-      "1まい": "FC",
-      "2まい": null,
-      "おにむず": "FC"
-    }
+    "title": "いっちょくせんだいさくせん！",
+    "jacket": "images/いっちょくせんだいさくせん！.png",
+    "shortTitle": "いっちょくせんだい…"
   },
   {
-    "title": "ナイショのヒミツ",
-    "jacket": "images/song3.jpg",
-    "result": {
-      "1まい": null,
-      "2まい": null,
-      "おにむず": null
-    }
+    "title": "Ring Ring Ring feat.ひまり",
+    "jacket": "images/RingRingRing.png",
+    "shortTitle": "Ring Ring…"
+  },
+  {
+    "title": "ひみつのふふふ",
+    "jacket": "images/ひみつのふふふ.png",
+    "shortTitle": "ひみつのふふふ"
+  },
+  {
+    "title": "レッツ！アイプリ",
+    "jacket": "images/レッツ！アイプリ.png",
+    "shortTitle": "レッツ！アイプリ"
+  },
+  {
+    "title": "P.O.P.P.Y.",
+    "jacket": "images/POPPY.png",
+    "shortTitle": "P.O.P.P.Y…"
+  },
+  {
+    "title": "シークレット・ドリーム",
+    "jacket": "images/シークレット・ドリーム.png",
+    "shortTitle": "シークレット・ドリ…"
+  },
+  {
+    "title": "ヒカリノコトバ",
+    "jacket": "images/ヒカリノコトバ.png",
+    "shortTitle": "ヒカリノコトバ"
+  },
+  {
+    "title": "GIRA GIRA STAR",
+    "jacket": "images/GIRAGIRASTAR.png",
+    "shortTitle": "GIRA GIRA…"
+  },
+  {
+    "title": "きらめきのうた",
+    "jacket": "images/きらめきのうた.png",
+    "shortTitle": "きらめきのうた"
+  },
+  {
+    "title": "GIRA GIRA STAR（ダークチィver.）",
+    "jacket": "images/GIRAGIRASTAR（ダークチィver）.png",
+    "shortTitle": "GIRA GIRA…"
+  },
+  {
+    "title": "きらめきのうた（シークレットフレンズver.）",
+    "jacket": "images/きらめきのうた（シークレットフレンズver）.png",
+    "shortTitle": "きらめきのうた（シー…"
+  },
+  {
+    "title": "パステルステップデイズ",
+    "jacket": "images/パステルステップデイズ.png",
+    "shortTitle": "パステルステップデ…"
+  },
+  {
+    "title": "ムテキDUOエナジー",
+    "jacket": "images/ムテキDUOエナジー.png",
+    "shortTitle": "ムテキDUOエナジ…"
+  },
+  {
+    "title": "Stand Get Up",
+    "jacket": "images/StandGetUp.png",
+    "shortTitle": "Stand Get…"
+  },
+  {
+    "title": "ネバギバラバー",
+    "jacket": "images/ネバギバラバー.png",
+    "shortTitle": "ネバギバラバー"
+  },
+  {
+    "title": "We’re The World",
+    "jacket": "images/We’reTheWorld.png",
+    "shortTitle": "We’re The…"
+  },
+  {
+    "title": "Perfect☆STARs",
+    "jacket": "images/Perfect☆STARs.png",
+    "shortTitle": "Perfect☆S…"
+  },
+  {
+    "title": "クリスマス・カルテット",
+    "jacket": "images/クリスマス・カルテット.png",
+    "shortTitle": "クリスマス・カルテ…"
+  },
+  {
+    "title": "ニュースタージョーカー",
+    "jacket": "images/ニュースタージョーカー.png",
+    "shortTitle": "ニュースタージョーカ…"
+  },
+  {
+    "title": "キズナ×リンク",
+    "jacket": "images/キズナ×リンク.png",
+    "shortTitle": "キズナ×リンク"
+  },
+  {
+    "title": "ときめきグラビティ",
+    "jacket": "images/ときめきグラビティ.png",
+    "shortTitle": "ときめきグラビティ"
+  },
+  {
+    "title": "わたしの大切にしてたこと",
+    "jacket": "images/わたしの大切にしてたこと.png",
+    "shortTitle": "わたしの大切にして…"
+  },
+  {
+    "title": "超Easy Drive☆",
+    "jacket": "images/超EasyDrive☆.png",
+    "shortTitle": "超Easy Dri…"
+  },
+  {
+    "title": "ココロ・アストロノーツ",
+    "jacket": "images/ココロ・アストロノーツ.png",
+    "shortTitle": "ココロ・アストロノ…"
+  },
+  {
+    "title": "Piece Of Dream",
+    "jacket": "images/PieceOfDream.png",
+    "shortTitle": "Piece Of …"
+  },
+  {
+    "title": "ぴかぴかマイストーリー",
+    "jacket": "images/ぴかぴかマイストーリー.png",
+    "shortTitle": "ぴかぴかマイストー…"
+  },
+  {
+    "title": "ひまりのひみつマイソング♪",
+    "jacket": "images/ひまりのひみつマイソング♪.png",
+    "shortTitle": "ひまりのひみつマイ…"
+  },
+  {
+    "title": "みつむぎのひみつマイソング♪",
+    "jacket": "images/みつむぎのひみつマイソング♪.png",
+    "shortTitle": "みつむぎのひみつマイ…"
+  },
+  {
+    "title": "サクラのひみつマイソング♪",
+    "jacket": "images/サクラのひみつマイソング♪.png",
+    "shortTitle": "サクラのひみつマイ…"
+  },
+  {
+    "title": "タマキのひみつマイソング♪",
+    "jacket": "images/タマキのひみつマイソング♪.png",
+    "shortTitle": "タマキのひみつマイ…"
+  },
+  {
+    "title": "アイリのひみつマイソング♪",
+    "jacket": "images/アイリのひみつマイソング♪.png",
+    "shortTitle": "アイリのひみつマイ…"
+  },
+  {
+    "title": "リンリンのひみつマイソング♪",
+    "jacket": "images/リンリンのひみつマイソング♪.png",
+    "shortTitle": "リンリンのひみつマ…"
+  },
+  {
+    "title": "チィのひみつマイソング♪",
+    "jacket": "images/チィのひみつマイソング♪.png",
+    "shortTitle": "チィのひみつマイソ…"
+  },
+  {
+    "title": "つむぎのひみつマイソング♪",
+    "jacket": "images/つむぎのひみつマイソング♪.png",
+    "shortTitle": "つむぎのひみつマイ…"
+  },
+  {
+    "title": "ハピハピハッピー☆マイバースデー",
+    "jacket": "images/ハピハピハッピー☆マイバースデー.png",
+    "shortTitle": "ハピハピハッピー☆…"
+  },
+  {
+    "title": "Go！アイプリバース",
+    "jacket": "images/Go！アイプリバース.png",
+    "shortTitle": "Go！アイプリバー…"
+  },
+  {
+    "title": "Let’s dance!×2",
+    "jacket": "images/Let’sdance!×2.png",
+    "shortTitle": "Let’s dan…"
+  },
+  {
+    "title": "aipri life♡",
+    "jacket": "images/aiprilife.png",
+    "shortTitle": "aipri lif…"
+  },
+  {
+    "title": "スマイル×11",
+    "jacket": "images/スマイル×11.png",
+    "shortTitle": "スマイル×11"
+  },
+  {
+    "title": "マイキャラ最新ヘアカタログ",
+    "jacket": "images/マイキャラ最新ヘアカタログ.png",
+    "shortTitle": "マイキャラ最新ヘア…"
+  },
+  {
+    "title": "Enjoy！アイプリバース",
+    "jacket": "images/Enjoy！アイプリバース.png",
+    "shortTitle": "Enjoy！アイプ…"
+  },
+  {
+    "title": "KIRA RAコーデパラダイス",
+    "jacket": "images/KIRARAコーデパラダイス.png",
+    "shortTitle": "KIRA RAコー…"
+  },
+  {
+    "title": "プリンセス・オンステージ",
+    "jacket": "images/プリンセス・オンステージ.png",
+    "shortTitle": "プリンセス・オンス…"
+  },
+  {
+    "title": "エブリデイ☆アイプリTime",
+    "jacket": "images/エブリデイ☆アイプリTime.png",
+    "shortTitle": "エブリデイ☆アイプ…"
+  },
+  {
+    "title": "アイプリバースメドレー1",
+    "jacket": "images/アイプリバースメドレー1.png",
+    "shortTitle": "バースメドレー1"
+  },
+  {
+    "title": "アイプリバースメドレー2",
+    "jacket": "images/アイプリバースメドレー2.png",
+    "shortTitle": "バースメドレー2"
+  },
+  {
+    "title": "アイプリバースメドレー3",
+    "jacket": "images/アイプリバースメドレー3.png",
+    "shortTitle": "バースメドレー3"
+  },
+  {
+    "title": "オシャレまじょ♥ラブandベリーメドレー",
+    "jacket": "images/オシャレまじょ♥ラブandベリーメドレー.png",
+    "shortTitle": "オシャレまじょ♥ラ…"
   }
 ]
