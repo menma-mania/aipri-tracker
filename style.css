@@ -21,8 +21,9 @@ body {
   overflow: hidden;
 }
 .song-card.rainbow {
-  border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+  border-width: 5px;
   border-style: solid;
+  border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
 }
 .song-jacket {
   width: 100%;
@@ -54,8 +55,7 @@ body {
   background-color: transparent;
   object-fit: contain;
 }
-/* empty.jpeg のときは非表示 */
-.progress-icon[src*="empty.jpeg"] {
+.progress-icon[src*="empty.png"] {
   visibility: hidden;
 }
 .song-info {
