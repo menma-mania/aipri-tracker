@@ -24,11 +24,59 @@
     "hasOni": false
   },
   {
-    "title": "レッツ！アイプリ",
-    "jacket": "images/レッツ！アイプリ.jpeg",
-    "shortTitle": "レッツ！アイプリ",
+    "title": "レッツ！アイプリ（ひまり）",
+    "jacket": "images/レッツ！アイプリ（ひまり）.jpeg",
+    "shortTitle": "（ひまり）レッツ！ア…",
+    "hasOni": false
+  },  
+  {
+    "title": "レッツ！アイプリ（みつき）",
+    "jacket": "images/レッツ！アイプリ（みつき）.jpeg",
+    "shortTitle": "（みつき）レッツ！ア…",
     "hasOni": false
   },
+  {
+    "title": "レッツ！アイプリ（つむぎ）",
+    "jacket": "images/レッツ！アイプリ（つむぎ）.jpeg",
+    "shortTitle": "（つむぎ）レッツ！ア…",
+    "hasOni": false
+  },
+  {
+    "title": "レッツ！アイプリ（サクラ）",
+    "jacket": "images/レッツ！アイプリ（サクラ）.jpeg",
+    "shortTitle": "（サクラ）レッツ！ア…",
+    "hasOni": false
+  },
+  {
+    "title": "レッツ！アイプリ（タマキ）",
+    "jacket": "images/レッツ！アイプリ（タマキ）.jpeg",
+    "shortTitle": "（タマキ）レッツ！ア…",
+    "hasOni": false
+  },  
+  {
+    "title": "レッツ！アイプリ（アイリ）",
+    "jacket": "images/レッツ！アイプリ（アイリ）.jpeg",
+    "shortTitle": "（アイリ）レッツ！ア…",
+    "hasOni": false
+  },
+  {
+    "title": "レッツ！アイプリ（リンリン）",
+    "jacket": "images/レッツ！アイプリ（リンリン）.jpeg",
+    "shortTitle": "（リンリン）レッツ！…",
+    "hasOni": false
+  },
+  {
+    "title": "レッツ！アイプリ（チィ）",
+    "jacket": "images/レッツ！アイプリ（チィ）.jpeg",
+    "shortTitle": "（チィ）レッツ！アイプ…",
+    "hasOni": false
+  },
+  {
+    "title": "レッツ！アイプリ（ひまり&みつき）",
+    "jacket": "images/レッツ！アイプリ（ひまり&みつき）.jpeg",
+    "shortTitle": "（ひまり&みつき）レッ…",
+    "hasOni": false
+  }, 
   {
     "title": "P.O.P.P.Y.",
     "jacket": "images/POPPY.jpeg",
@@ -210,81 +258,51 @@
     "hasOni": false
   },
   {
-    "title": "ハピハピハッピー☆マイバースデー",
-    "jacket": "images/ハピハピハッピー☆マイバースデー.jpeg",
-    "shortTitle": "ハピハピハッピー☆マイ",
+    "title": "ハピハピハッピー☆マイバースデー（ひまり）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（ひまり）.jpeg",
+    "shortTitle": "ひまり バースデー",
     "hasOni": false
   },
   {
-    "title": "Go！アイプリバース",
-    "jacket": "images/Go！アイプリバース.jpeg",
-    "shortTitle": "Go！アイプリバース",
+    "title": "ハピハピハッピー☆マイバースデー（みつき）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（みつき）.jpeg",
+    "shortTitle": "みつき バースデー",
     "hasOni": false
   },
   {
-    "title": "Let’s dance!×2",
-    "jacket": "images/Let’sdance!×2.jpeg",
-    "shortTitle": "Let’s dance!×2",
+    "title": "ハピハピハッピー☆マイバースデー（つむぎ）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（つむぎ）.jpeg",
+    "shortTitle": "つむぎ バースデー",
     "hasOni": false
   },
   {
-    "title": "aipri life♡",
-    "jacket": "images/aiprilife.jpeg",
-    "shortTitle": "aipri life♡",
+    "title": "ハピハピハッピー☆マイバースデー（サクラ）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（サクラ）.jpeg",
+    "shortTitle": "サクラ バースデー",
     "hasOni": false
   },
   {
-    "title": "スマイル×11",
-    "jacket": "images/スマイル×11.jpeg",
-    "shortTitle": "スマイル×11",
+    "title": "ハピハピハッピー☆マイバースデー（タマキ）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（タマキ）.jpeg",
+    "shortTitle": "タマキ バースデー",
     "hasOni": false
   },
   {
-    "title": "マイキャラ最新ヘアカタログ",
-    "jacket": "images/マイキャラ最新ヘアカタログ.jpeg",
-    "shortTitle": "マイキャラ最新ヘアカタ…",
+    "title": "ハピハピハッピー☆マイバースデー（アイリ）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（アイリ）.jpeg",
+    "shortTitle": "アイリ バースデー",
     "hasOni": false
   },
   {
-    "title": "Enjoy！アイプリバース",
-    "jacket": "images/Enjoy！アイプリバース.jpeg",
-    "shortTitle": "Enjoy！アイプリバース",
+    "title": "ハピハピハッピー☆マイバースデー（リンリン）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（リンリン）.jpeg",
+    "shortTitle": "リンリン バースデー",
     "hasOni": false
   },
   {
-    "title": "KIRA RAコーデパラダイス",
-    "jacket": "images/KIRARAコーデパラダイス.jpeg",
-    "shortTitle": "KIRA RAコーデパラダイス",
-    "hasOni": false
-  },
-  {
-    "title": "プリンセス・オンステージ",
-    "jacket": "images/プリンセス・オンステージ.jpeg",
-    "shortTitle": "プリンセス・オンステージ",
-    "hasOni": false
-  },
-  {
-    "title": "エブリデイ☆アイプリTime",
-    "jacket": "images/エブリデイ☆アイプリTime.jpeg",
-    "shortTitle": "エブリデイ☆アイプリTime",
-    "hasOni": false
-  },
-  {
-    "title": "アイプリバースメドレー1",
-    "jacket": "images/アイプリバースメドレー1.jpeg",
-    "shortTitle": "アイプリバースメドレー1",
-    "hasOni": false
-  },
-  {
-    "title": "アイプリバースメドレー2",
-    "jacket": "images/アイプリバースメドレー2.jpeg",
-    "shortTitle": "アイプリバースメドレー2",
-    "hasOni": false
-  },
-  {
-    "title": "アイプリバースメドレー3",
-    "jacket": "images/アイプリバースメドレー3.jpeg",
-    "shortTitle": "アイプリバースメドレー3",
+    "title": "ハピハピハッピー☆マイバースデー（チィ）",
+    "jacket": "images/ハピハピハッピー☆マイバースデー（チィ）.jpeg",
+    "shortTitle": "チィ バースデー",
     "hasOni": false
   },
   {
