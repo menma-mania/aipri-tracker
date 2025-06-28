@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const jacket = document.createElement("div");
         jacket.className = "song-jacket";
-        jacket.style.backgroundImage = `url(images/${song.jacket})`;
+        jacket.style.backgroundImage = `url(${song.jacket})`;
 
         const progressBox = document.createElement("div");
         progressBox.className = "progress-box";
