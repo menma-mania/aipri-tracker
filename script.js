@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const progressTypes = ["full1", "perfect1", "full2", "perfect2", "fulloni", "perfectoni"];
         const progressImages = {
-          full1: "full1.jpeg",
-          perfect1: "perfect1.jpeg",
-          full2: "full2.jpeg",
-          perfect2: "perfect2.jpeg",
-          fulloni: "fulloni.jpeg",
-          perfectoni: "perfectoni.jpeg"
+          full1: "full1.png",
+          perfect1: "perfect1.png",
+          full2: "full2.png",
+          perfect2: "perfect2.png",
+          fulloni: "fulloni.png",
+          perfectoni: "perfectoni.png"
         };
 
         song.states = saved[index]?.states || {};
