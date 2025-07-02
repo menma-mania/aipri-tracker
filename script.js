@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   fetch("data.json")
     .then((response) => response.json())
@@ -6,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const saved = JSON.parse(localStorage.getItem("aipriProgress")) || {};
       const songList = document.getElementById("song-list");
 
-      songs.forEach((song, index) => {
+      songs.forEach((song) => {
         const card = document.createElement("div");
         card.className = "song-card";
-        card.dataset.index = index;
+        card.dataset.id = song.id;
 
         const jacket = document.createElement("div");
         jacket.className = "song-jacket";
@@ -28,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
           perfectoni: "perfectoni.png"
         };
 
-        song.states = saved[index]?.states || {};
+        song.states = saved[song.id]?.states || {};
         const icons = [];
 
         progressTypes.forEach((type) => {
@@ -76,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         function saveProgress() {
-          saved[index] = { states: song.states };
+          saved[song.id] = { states: song.states };
           localStorage.setItem("aipriProgress", JSON.stringify(saved));
         }
 
