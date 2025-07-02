@@ -1,311 +1,363 @@
 [
   {
+    "id": "op01",
     "title": "ぜんりょくじょしかくめい！",
     "jacket": "images/ぜんりょくじょしかくめい！.jpeg",
     "shortTitle": "ぜんりょくじょしかくめ…",
     "hasOni": false
   },
   {
+    "id": "op02",
     "title": "いっちょくせんだいさくせん！",
     "jacket": "images/いっちょくせんだいさくせん！.jpeg",
     "shortTitle": "いっちょくせんだいさく…",
     "hasOni": true
   },
   {
+    "id": "op03",
     "title": "Ring Ring Ring feat.ひまり",
     "jacket": "images/RingRingRing.jpeg",
     "shortTitle": "Ring Ring Ring feat…",
     "hasOni": false
   },
   {
+    "id": "ed01",
     "title": "ひみつのふふふ",
     "jacket": "images/ひみつのふふふ.jpeg",
     "shortTitle": "ひみつのふふふ",
     "hasOni": false
   },
   {
+    "id": "lets01",
     "title": "レッツ！アイプリ（ひまり）",
     "jacket": "images/レッツ！アイプリ（ひまり）.jpeg",
     "shortTitle": "ひまり レッツ！アイプリ",
     "hasOni": false
   },  
   {
+    "id": "lets02",
     "title": "レッツ！アイプリ（みつき）",
     "jacket": "images/レッツ！アイプリ（みつき）.jpeg",
     "shortTitle": "みつき レッツ！アイプリ",
     "hasOni": false
   },
   {
+    "id": "lets03",
     "title": "レッツ！アイプリ（つむぎ）",
     "jacket": "images/レッツ！アイプリ（つむぎ）.jpeg",
     "shortTitle": "つむぎ レッツ！アイプリ",
     "hasOni": false
   },
   {
+    "id": "lets04",
     "title": "レッツ！アイプリ（サクラ）",
     "jacket": "images/レッツ！アイプリ（サクラ）.jpeg",
     "shortTitle": "サクラ レッツ！アイプリ",
     "hasOni": false
   },
   {
+    "id": "lets05",
     "title": "レッツ！アイプリ（タマキ）",
     "jacket": "images/レッツ！アイプリ（タマキ）.jpeg",
     "shortTitle": "タマキ レッツ！アイプリ",
     "hasOni": false
   },  
   {
+    "id": "lets06",
     "title": "レッツ！アイプリ（アイリ）",
     "jacket": "images/レッツ！アイプリ（アイリ）.jpeg",
     "shortTitle": "アイリ レッツ！アイプリ",
     "hasOni": false
   },
   {
+    "id": "lets07",
     "title": "レッツ！アイプリ（リンリン）",
     "jacket": "images/レッツ！アイプリ（リンリン）.jpeg",
     "shortTitle": "リンリン レッツ！アイ…",
     "hasOni": false
   },
   {
+    "id": "lets08",
     "title": "レッツ！アイプリ（チィ）",
     "jacket": "images/レッツ！アイプリ（チィ）.jpeg",
     "shortTitle": "チィ レッツ！アイプリ",
     "hasOni": false
   },
   {
+    "id": "lets09",
     "title": "レッツ！アイプリ（ひまり&みつき）",
     "jacket": "images/レッツ！アイプリ（ひまり&みつき）.jpeg",
     "shortTitle": "ひまり&みつき レッ…",
     "hasOni": false
   }, 
   {
+    "id": "solo01",
     "title": "P.O.P.P.Y.",
     "jacket": "images/POPPY.jpeg",
     "shortTitle": "P.O.P.P.Y.",
     "hasOni": false
   },
   {
+    "id": "solo02",
     "title": "シークレット・ドリーム",
     "jacket": "images/シークレット・ドリーム.jpeg",
     "shortTitle": "シークレット・ドリーム",
     "hasOni": false
   },
   {
+    "id": "solo03",
     "title": "ヒカリノコトバ",
     "jacket": "images/ヒカリノコトバ.jpeg",
     "shortTitle": "ヒカリノコトバ",
     "hasOni": false
   },
   {
+    "id": "solo04",
     "title": "GIRA GIRA STAR",
     "jacket": "images/GIRAGIRASTAR.jpeg",
     "shortTitle": "GIRA GIRA STAR",
     "hasOni": true
   },
   {
+    "id": "solo05",
     "title": "きらめきのうた",
     "jacket": "images/きらめきのうた.jpeg",
     "shortTitle": "きらめきのうた",
     "hasOni": false
   },
   {
+    "id": "solo06",
     "title": "GIRA GIRA STAR（ダークチィver.）",
     "jacket": "images/GIRAGIRASTAR（ダークチィver）.jpeg",
     "shortTitle": "GIRA GIRA STAR（ダー…",
     "hasOni": false
   },
   {
+    "id": "unit08",
     "title": "きらめきのうた（シークレットフレンズver.）",
     "jacket": "images/きらめきのうた（シークレットフレンズver）.jpeg",
     "shortTitle": "きらめきのうた（シー…",
     "hasOni": false
   },
   {
+    "id": "solo07",
     "title": "パステルステップデイズ",
     "jacket": "images/パステルステップデイズ.jpeg",
     "shortTitle": "パステルステップデイズ",
     "hasOni": true
   },
   {
+    "id": "unit01",
     "title": "ムテキDUOエナジー",
     "jacket": "images/ムテキDUOエナジー.jpeg",
     "shortTitle": "ムテキDUOエナジー",
     "hasOni": true
   },
   {
+    "id": "unit02",
     "title": "Stand Get Up",
     "jacket": "images/StandGetUp.jpeg",
     "shortTitle": "Stand Get Up",
     "hasOni": true
   },
   {
+    "id": "unit03",
     "title": "ネバギバラバー",
     "jacket": "images/ネバギバラバー.jpeg",
     "shortTitle": "ネバギバラバー",
     "hasOni": true
   },
   {
+    "id": "unit04",
     "title": "We’re The World",
     "jacket": "images/WereTheWorld.jpeg",
     "shortTitle": "We’re The World",
     "hasOni": true
   },
   {
+    "id": "unit05",
     "title": "Perfect☆STARs",
     "jacket": "images/Perfect☆STARs.jpeg",
     "shortTitle": "Perfect☆STARs",
     "hasOni": true
   },
   {
+    "id": "unit06",
     "title": "クリスマス・カルテット",
     "jacket": "images/クリスマス・カルテット.jpeg",
     "shortTitle": "クリスマス・カルテット",
     "hasOni": false
   },
   {
+    "id": "unit07",
     "title": "ニュースタージョーカー",
     "jacket": "images/ニュースタージョーカー.jpeg",
     "shortTitle": "ニュースタージョーカー",
     "hasOni": false
   },
   {
+    "id": "unit09",
     "title": "キズナ×リンク",
     "jacket": "images/キズナ×リンク.jpeg",
     "shortTitle": "キズナ×リンク",
-    "hasOni": false
+    "hasOni": true
   },
   {
+    "id": "unit10",
     "title": "ときめきグラビティ",
     "jacket": "images/ときめきグラビティ.jpeg",
     "shortTitle": "ときめきグラビティ",
     "hasOni": false
   },
   {
+    "id": "solo08",
     "title": "わたしの大切にしてたこと",
     "jacket": "images/わたしの大切にしてたこと.jpeg",
     "shortTitle": "わたしの大切にしてたこと",
     "hasOni": true
   },
   {
+    "id": "solo09",
     "title": "超Easy Drive☆",
     "jacket": "images/超EasyDrive☆.jpeg",
     "shortTitle": "超Easy Drive☆",
     "hasOni": true
   },
   {
+    "id": "unit11",
     "title": "ココロ・アストロノーツ",
     "jacket": "images/ココロ・アストロノーツ.jpeg",
     "shortTitle": "ココロ・アストロノーツ",
-    "hasOni": false
+    "hasOni": true
   },
   {
+    "id": "solo10",
     "title": "Piece Of Dream",
     "jacket": "images/PieceOfDream.jpeg",
     "shortTitle": "Piece Of Dream",
     "hasOni": false
   },
   {
+    "id": "solo11",
     "title": "ぴかぴかマイストーリー",
     "jacket": "images/ぴかぴかマイストーリー.jpeg",
     "shortTitle": "ぴかぴかマイストーリー",
     "hasOni": false
   },
   {
+    "id": "mysong01",
     "title": "ひまりのひみつマイソング♪",
     "jacket": "images/ひまりのひみつマイソング♪.jpeg",
     "shortTitle": "ひまりのひみつマイソング",
     "hasOni": false
   },
   {
+    "id": "mysong02",
     "title": "みつきのひみつマイソング♪",
     "jacket": "images/みつきのひみつマイソング♪.jpeg",
     "shortTitle": "みつきのひみつマイソング",
     "hasOni": false
   },
   {
+    "id": "mysong03",
     "title": "サクラのひみつマイソング♪",
     "jacket": "images/サクラのひみつマイソング♪.jpeg",
     "shortTitle": "サクラのひみつマイソング",
     "hasOni": false
   },
   {
+    "id": "mysong04",
     "title": "タマキのひみつマイソング♪",
     "jacket": "images/タマキのひみつマイソング♪.jpeg",
     "shortTitle": "タマキのひみつマイソング",
     "hasOni": false
   },
   {
+    "id": "mysong05",
     "title": "アイリのひみつマイソング♪",
     "jacket": "images/アイリのひみつマイソング♪.jpeg",
     "shortTitle": "アイリのひみつマイソング",
     "hasOni": false
   },
   {
+    "id": "mysong06",
     "title": "リンリンのひみつマイソング♪",
     "jacket": "images/リンリンのひみつマイソング♪.jpeg",
     "shortTitle": "リンリンのひみつマイソ…",
     "hasOni": false
   },
   {
+    "id": "mysong07",
     "title": "チィのひみつマイソング♪",
     "jacket": "images/チィのひみつマイソング♪.jpeg",
     "shortTitle": "チィのひみつマイソング",
     "hasOni": false
   },
   {
+    "id": "mysong08",
     "title": "つむぎのひみつマイソング♪",
     "jacket": "images/つむぎのひみつマイソング♪.jpeg",
     "shortTitle": "つむぎのひみつマイソング",
     "hasOni": false
   },
   {
+    "id": "birthday01",
     "title": "ハピハピハッピー☆マイバースデー（ひまり）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（ひまり）.jpeg",
     "shortTitle": "ひまり バースデー",
     "hasOni": false
   },
   {
+    "id": "birthday02",
     "title": "ハピハピハッピー☆マイバースデー（みつき）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（みつき）.jpeg",
     "shortTitle": "みつき バースデー",
     "hasOni": false
   },
   {
+    "id": "birthday03",
     "title": "ハピハピハッピー☆マイバースデー（つむぎ）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（つむぎ）.jpeg",
     "shortTitle": "つむぎ バースデー",
     "hasOni": false
   },
   {
+    "id": "birthday04",
     "title": "ハピハピハッピー☆マイバースデー（サクラ）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（サクラ）.jpeg",
     "shortTitle": "サクラ バースデー",
     "hasOni": false
   },
   {
+    "id": "birthday05",
     "title": "ハピハピハッピー☆マイバースデー（タマキ）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（タマキ）.jpeg",
     "shortTitle": "タマキ バースデー",
     "hasOni": false
   },
   {
+    "id": "birthday06",
     "title": "ハピハピハッピー☆マイバースデー（アイリ）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（アイリ）.jpeg",
     "shortTitle": "アイリ バースデー",
     "hasOni": false
   },
   {
+    "id": "birthday07",
     "title": "ハピハピハッピー☆マイバースデー（リンリン）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（リンリン）.jpeg",
     "shortTitle": "リンリン バースデー",
     "hasOni": false
   },
   {
+    "id": "birthday08",
     "title": "ハピハピハッピー☆マイバースデー（チィ）",
     "jacket": "images/ハピハピハッピー☆マイバースデー（チィ）.jpeg",
     "shortTitle": "チィ バースデー",
     "hasOni": false
   },
   {
+    "id": "special01",
     "title": "オシャレまじょ♥ラブandベリーメドレー",
     "jacket": "images/オシャレまじょ♥ラブandベリーメドレー.jpeg",
     "shortTitle": "オシャレまじょ♥ラブ…",
