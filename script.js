@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const jacket = document.createElement("div");
         jacket.className = "song-jacket";
-        jacket.style.backgroundImage = url(${song.jacket});
+        jacket.style.backgroundImage = `url(${song.jacket})`;
 
         const progressBox = document.createElement("div");
         progressBox.className = "progress-box";
@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
             img.src = "images/empty.png";
           } else {
             const active = song.states[type];
-            img.src = active ? images/${progressImages[type]} : "images/empty.png";
+            img.src = active ? `images/${progressImages[type]}` : "images/empty.png";
 
             img.addEventListener("click", (e) => {
               e.stopPropagation();
               song.states[type] = !song.states[type];
-              img.src = song.states[type] ? images/${progressImages[type]} : "images/empty.png";
+              img.src = song.states[type] ? `images/${progressImages[type]}` : "images/empty.png";
               updateRainbow();
               saveProgress();
             });
