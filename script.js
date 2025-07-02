@@ -1,12 +1,15 @@
-// 旧形式からの復元（必要な場合）
+// 移行済みかどうか確認
 if (!localStorage.getItem("aipriProgress")) {
   try {
+    // 旧形式のprogress-〇〇をすべて取得
     const oldKeys = Object.keys(localStorage).filter(k => k.startsWith("progress-"));
     const newProgress = {};
 
+    // 現在のdata.jsonのデータを取得
     fetch("data.json")
       .then(res => res.json())
       .then(songs => {
+        // タイトル→IDのマップを作成
         const titleToIdMap = {};
         songs.forEach(song => {
           if (song.id && song.title) {
@@ -14,6 +17,7 @@ if (!localStorage.getItem("aipriProgress")) {
           }
         });
 
+        // 各旧キーを新形式に変換
         oldKeys.forEach(oldKey => {
           const title = oldKey.replace("progress-", "");
           const id = titleToIdMap[title];
@@ -22,12 +26,17 @@ if (!localStorage.getItem("aipriProgress")) {
               const value = JSON.parse(localStorage.getItem(oldKey));
               newProgress[id] = value;
             } catch (e) {
-              console.warn(`Failed to parse localStorage for ${oldKey}`);
+              console.warn(Failed to parse localStorage for ${oldKey});
             }
           }
         });
 
+        // 保存
         localStorage.setItem("aipriProgress", JSON.stringify(newProgress));
+
+        // ✅ 旧形式のデータは不要なら削除（任意・コメント解除で有効化）
+        // oldKeys.forEach(key => localStorage.removeItem(key));
+
         console.log("✅ 旧データをaipriProgressに移行完了");
       });
   } catch (e) {
@@ -39,18 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("data.json")
     .then((response) => response.json())
     .then((songs) => {
-      // ✅ 並び順をIDのprefixと番号で並べ替える
-      const prefixOrder = ["op", "ed", "solo", "unit", "lets", "mysong", "birthday", "special"];
-
-      songs.sort((a, b) => {
-        const [prefixA, numA] = a.id.match(/^([a-z]+)(\d+)$/i).slice(1);
-        const [prefixB, numB] = b.id.match(/^([a-z]+)(\d+)$/i).slice(1);
-        const indexA = prefixOrder.indexOf(prefixA);
-        const indexB = prefixOrder.indexOf(prefixB);
-        if (indexA !== indexB) return indexA - indexB;
-        return parseInt(numA) - parseInt(numB);
-      });
-
       const saved = JSON.parse(localStorage.getItem("aipriProgress")) || {};
       const songList = document.getElementById("song-list");
 
@@ -61,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const jacket = document.createElement("div");
         jacket.className = "song-jacket";
-        jacket.style.backgroundImage = `url(${song.jacket})`;
+        jacket.style.backgroundImage = url(${song.jacket});
 
         const progressBox = document.createElement("div");
         progressBox.className = "progress-box";
@@ -77,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         song.states = saved[song.id]?.states || {};
+        const icons = [];
 
         progressTypes.forEach((type) => {
           const img = document.createElement("img");
@@ -91,12 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
             img.src = "images/empty.png";
           } else {
             const active = song.states[type];
-            img.src = active ? `images/${progressImages[type]}` : "images/empty.png";
+            img.src = active ? images/${progressImages[type]} : "images/empty.png";
 
             img.addEventListener("click", (e) => {
               e.stopPropagation();
               song.states[type] = !song.states[type];
-              img.src = song.states[type] ? `images/${progressImages[type]}` : "images/empty.png`;
+              img.src = song.states[type] ? images/${progressImages[type]} : "images/empty.png";
               updateRainbow();
               saveProgress();
             });
