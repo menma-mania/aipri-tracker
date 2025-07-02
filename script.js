@@ -2,6 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("data.json")
     .then((response) => response.json())
     .then((songs) => {
+      // ソート処理追加
+      const categoryOrder = ["op", "ed", "solo", "unit", "lets", "mysong", "birthday", "special"];
+      songs.sort((a, b) => {
+        const [catA, numA] = [a.id.slice(0, -2), parseInt(a.id.slice(-2))];
+        const [catB, numB] = [b.id.slice(0, -2), parseInt(b.id.slice(-2))];
+        const indexA = categoryOrder.indexOf(catA);
+        const indexB = categoryOrder.indexOf(catB);
+
+        if (indexA !== indexB) return indexA - indexB;
+        return numA - numB;
+      });
+
       const saved = JSON.parse(localStorage.getItem("aipriProgress")) || {};
       const songList = document.getElementById("song-list");
 
@@ -28,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         song.states = saved[song.id]?.states || {};
-        const icons = [];
 
         progressTypes.forEach((type) => {
           const img = document.createElement("img");
