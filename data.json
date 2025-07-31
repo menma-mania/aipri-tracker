@@ -245,6 +245,20 @@
     "hasOni": false
   },
   {
+    "id": "solo12",
+    "title": "わいるど☆すたー（ソロ）",
+    "jacket": "images/わいるど☆すたー（ソロ）.jpeg",
+    "shortTitle": "わいるど☆すたー（ソロ）",
+    "hasOni": false
+  },
+  {
+    "id": "unit12",
+    "title": "わいるど☆すたー（デュオ）",
+    "jacket": "images/わいるど☆すたー（デュオ）.jpeg",
+    "shortTitle": "わいるど☆すたー（デュオ）",
+    "hasOni": false
+  },
+  {
     "id": "mysong01",
     "title": "ひまりのひみつマイソング♪",
     "jacket": "images/ひまりのひみつマイソング♪.jpeg",
@@ -361,6 +375,20 @@
     "title": "オシャレまじょ♥ラブandベリーメドレー",
     "jacket": "images/オシャレまじょ♥ラブandベリーメドレー.jpeg",
     "shortTitle": "オシャレまじょ♥ラブ…",
+    "hasOni": false
+  },
+  {
+    "id": "special02",
+    "title": "アイプリバースメドレー1",
+    "jacket": "images/アイプリバースメドレー1.jpeg",
+    "shortTitle": "バースメドレー1",
+    "hasOni": false
+  },
+  {
+    "id": "special03",
+    "title": "アイプリバースメドレー2",
+    "jacket": "images/アイプリバースメドレー2.jpeg",
+    "shortTitle": "バースメドレー2",
     "hasOni": false
   }
 ]
